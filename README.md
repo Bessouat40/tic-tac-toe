@@ -7,3 +7,10 @@ Tic tac toe C++ implementation.
 ```bash
 make test
 ```
+
+## TODO
+
+- [x] Board Class creation
+- [ ] Player Class creation
+- [ ] Game Class creation
+- [ ] Automate rounds
