@@ -2,4 +2,4 @@
 
 test:
 	docker build -t cpp .
-	docker run cpp
+	docker run -it cpp

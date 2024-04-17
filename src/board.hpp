@@ -3,13 +3,10 @@
 
 #include <vector>
 #include <string>
-// #include "player.hpp"
 
 class Board {
     public:
         std::vector<std::vector<char>> board;
-        // player1
-        // player2
 
         Board();
         bool place_pawn(const char& shape, const std::tuple<int, int>& coordinates);
