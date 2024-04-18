@@ -25,7 +25,7 @@ void Player::print_player() {
 *@param coordinates Coordinates where the player want to place its pawn.
 *@return false if we can't place the pawn at this place, else return true.
 */
-void Player::play(const Board& board, std::tuple<int, int> coordinates) {
+bool Player::play(Board& board, std::tuple<int, int> coordinates) {
     bool placed = board.place_pawn(shape, coordinates);
     if (placed == false) {
         std::cout << "You can't place your pawn here, please retry..." << std::endl;

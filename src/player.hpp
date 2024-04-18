@@ -1,6 +1,8 @@
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
 
+#include "board.hpp"
+
 #include <vector>
 #include <string>
 
@@ -12,7 +14,7 @@ class Player {
         Player() = default;
         Player(const std::string& player_name, const char& shape);
         void print_player();
-        void play(const Board& board);
+        bool play(Board& board, std::tuple<int, int> coordinates);
 };
 
 #endif
