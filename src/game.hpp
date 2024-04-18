@@ -14,6 +14,7 @@ class Game {
         Game();
 
         std::tuple<Player, Player> init_players();
+        
 };
 
 #endif

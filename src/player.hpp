@@ -12,6 +12,7 @@ class Player {
         Player() = default;
         Player(const std::string& player_name, const char& shape);
         void print_player();
+        void play(const Board& board);
 };
 
 #endif

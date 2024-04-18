@@ -6,11 +6,15 @@
 #include <tuple>
 
 int main() {
-    int test;
+    // Game initialisation
+    Game game = Game();
 
+    game.player1.print_player();
+    game.player2.print_player();
+
+    // Test for board manipulation
     Board board = Board();
     board.print_board();
-
     char shape = 'o';
     char shape2 = 'x';
     std::tuple<int, int> coordinates = {2, 0};
@@ -28,8 +32,5 @@ int main() {
 
     std::cout << board.check_end_game(shape) <<std::endl;
     
-    Game game = Game();
-
-    game.player1.print_player();
-    game.player2.print_player();
+    // end test
 }
