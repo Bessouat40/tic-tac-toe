@@ -2,8 +2,7 @@
 
 Tic tac toe C++ implementation.
 
-![demo](./medias/demo.gif)
-<img src="./medias/demo.gif" width="400" height="300" />
+![demo](./medias/demo_app.gif)
 
 ## Usage
 
