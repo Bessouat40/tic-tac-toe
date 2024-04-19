@@ -40,3 +40,22 @@ bool Player::play(Board& board, std::tuple<int, int> coordinates) {
     }
     return true;
 }
+
+/**
+* Get pawn placement and try to play.
+*
+*@param board Board we're playing on.
+*@return true if pawn placement success, else return false.
+*/
+bool Player::play_round(Board& board) {
+    int row;
+    int col;
+    print_player();
+    std::cout << " please select a row : ";
+    std::cin >> row;
+    print_player();
+    std::cout << " please select a column : ";
+    std::cin >> col;
+    bool success = play(board, std::tuple<int,int> {row - 1, col - 1});
+    return success;
+}

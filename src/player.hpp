@@ -16,6 +16,7 @@ class Player {
         void print_player();
         void print_player_as_winner();
         bool play(Board& board, std::tuple<int, int> coordinates);
+        bool play_round(Board& board);
 };
 
 #endif

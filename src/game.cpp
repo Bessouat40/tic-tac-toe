@@ -46,16 +46,8 @@ Game::Game() {
 *@return winner Player.
 */
 void Game::play() {
-    int row;
-    int col;
     Player _player = (player_playing == 0) ? std::get<0>(players) : std::get<1>(players);
-    _player.print_player();
-    std::cout << " please select a row : ";
-    std::cin >> row;
-    _player.print_player();
-    std::cout << " please select a column : ";
-    std::cin >> col;
-    bool success = _player.play(board, std::tuple<int,int> {row - 1, col - 1});
+    bool success = _player.play_round(board);
     board.print_board();
     if (success == false) {
         play();
