@@ -2,7 +2,7 @@
 
 Tic tac toe C++ implementation.
 
-![demo](./medias/demo_app.gif)
+![demo](./medias/demo_project.gif)
 
 ## Usage
 
