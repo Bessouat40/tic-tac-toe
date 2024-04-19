@@ -48,9 +48,10 @@ bool Board::place_pawn(const char& shape, const std::tuple<int, int>& coordinate
 *@return true if coordinate exists inside our board, else return false.
 */
 bool Board::check_coordinates(const int row, const int col) {
-    bool row_check = row <= board.size() && row >= 0;
-    bool col_check = col <= board[0].size() && col >= 0;
-    return row_check && col_check;
+    bool row_check = row < board.size() && row >= 0;
+    bool col_check = col < board[0].size() && col >= 0;
+    bool exists = board[row][col] == '.';
+    return row_check && col_check && exists;
 }
 
 /**

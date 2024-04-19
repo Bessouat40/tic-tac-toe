@@ -15,7 +15,14 @@ Player::Player(const std::string& player_name, const char& shape) {
 * Display player informations.
 */
 void Player::print_player() {
-    std::cout << "Player " << name << " / shape : " << shape << std::endl << std::endl ;
+    std::cout << "Player " << name;
+}
+
+/**
+* Display player as a winner.
+*/
+void Player::print_player_as_winner() {
+    std::cout << "Player " << name << " is the winner !!! 👏" << std::endl;
 }
 
 /**
