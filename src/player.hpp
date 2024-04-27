@@ -1,5 +1,4 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
+#pragma once
 
 #include "board.hpp"
 
@@ -18,5 +17,3 @@ class Player {
         bool play(Board& board, std::tuple<int, int> coordinates);
         bool play_round(Board& board);
 };
-
-#endif

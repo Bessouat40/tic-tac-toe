@@ -1,5 +1,4 @@
-#ifndef BOARD_HPP
-#define BOARD_HPP
+#pragma once
 
 #include <vector>
 #include <string>
@@ -17,5 +16,3 @@ class Board {
         bool check_diags(const char& shape);
         void print_board();
 };
-
-#endif
